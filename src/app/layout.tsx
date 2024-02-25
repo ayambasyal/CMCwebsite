@@ -5,6 +5,9 @@ import Nav from "@/components/Nav"
 import { Sidebar } from '../components/ui/sidebar';
 import { playlists } from "@/data/playlists";
 import { Menu } from "@/components/menu";
+import Header from "@/components/header";
+import { SiteHeader } from "@/components/nav/site-header"
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-      <Menu />
-      {children}</body>
+      <body className={inter.className} suppressHydrationWarning>
+      <SiteHeader />
+      {children}
+      </body>
     </html>
   );
 }

@@ -10,33 +10,38 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
-import Autoheight from "embla-carousel-auto-height"
+// import Autoheight from "embla-carousel-auto-height"
+
+import { AlbumArtwork } from "@/components/album-artworks"
+import { PhotoArtwork } from "@/components/photo-artworks";
+import { listenNowAlbums, madeForYouAlbums } from "@/data/albums"
+import { MainPage } from "@/data/PhotoSlides";
 
 export default function Home() {
-  const sld = ["/public/slide1.png","/public/slide2.png","/public/slide3.png"]
-  const slid = sld.map((s)=><Image src="s" alt="alt" width={20} height={20} key={s}/>)
+
   return (
     <main className="p-12">
     <Carousel
     opts={{
     align: "start",
     loop: true,
-    // slides: slid
   }}
   plugins={[
     Autoplay({
-      delay: 4000,
+      delay: 6000,
     }),
-    Autoheight()
-  ]}>
-      <CarouselContent className="h-24 w-full">
-        <CarouselItem className="h-24 text-center justify-items-center">
-          <Image src="/public/vercel.svg" alt="alternatie" width={15} height={15} />
-          <p>hello</p>
-          <p>this is me</p>
-        </CarouselItem>
-        <CarouselItem className="h-24 text-center justify-items-center">2</CarouselItem>
-        <CarouselItem className="h-24 text-center justify-items-center">3</CarouselItem>
+  ]}
+  className="px-4 py-4"
+  >
+      <CarouselContent className="relative embla__slide py-5">
+      {MainPage.map((x) => (
+        <CarouselItem className="relative w-full place-self-center" key={x.photosrc}>
+                              <PhotoArtwork
+                                key={x.name}
+                                Photo={x}
+                              />
+                              </CarouselItem>
+                            ))} 
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />

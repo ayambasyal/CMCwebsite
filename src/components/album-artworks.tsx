@@ -39,6 +39,7 @@ export function AlbumArtwork({
             <Image
               src={album.cover}
               alt={album.name}
+              // fill
               width={width}
               height={height}
               className={cn(

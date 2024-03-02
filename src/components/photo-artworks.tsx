@@ -5,15 +5,11 @@ import { PhotoSlide } from '../data/PhotoSlides';
 interface PhotoArtworkProps extends React.HTMLAttributes<HTMLDivElement> {
   Photo: PhotoSlide
   aspectRatio?: "portrait" | "landscape"
-//   width?: number
-//   height?: number
 }
 
 export function PhotoArtwork({
   Photo,
   aspectRatio = "portrait",
-//   width,
-//   height,
   className,
   ...props
 }: PhotoArtworkProps) {

@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/Nav"
 import { Sidebar } from '../components/ui/sidebar';
 import { playlists } from "@/data/playlists";
-import { Menu } from "@/components/menu";
 import Header from "@/components/header";
 import { SiteHeader } from "@/components/nav/site-header"
+import { ThemeProvider } from "@/components/theme-provider";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,8 +23,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className} suppressHydrationWarning>
-      <SiteHeader />
+      <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <SiteHeader />
       {children}
+          </ThemeProvider>
       </body>
     </html>
   );

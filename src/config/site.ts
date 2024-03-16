@@ -1,14 +1,15 @@
 export const siteConfig = {
   name: "Computational Mathematics Club",
-  url: "https://cmclub.ku.edu.no",
+  url: "https://cmclub.ku.edu.n",
   ogImage: "https://ui.shadcn.com/og.jpg",
   description:
-    "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
+    "",
   links: {
     twitter: "https://twitter.com/shadcn",
-    github: "https://github.com/shadcn-ui/ui",
+    github: "https://github.com/KUCMC",
     facebook: "https://www.facebook.com/kucmc1",
-    instagram:"https://www.instagram.com/kucmc.official/"
+    instagram:"https://www.instagram.com/kucmc.official/",
+    Linkedin:"https://www.instagram.com/kucmc.official/"
   },
 }
 

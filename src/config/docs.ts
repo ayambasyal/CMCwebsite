@@ -1,4 +1,4 @@
-import { MainNavItem, SidebarNavItem } from "types/nav"
+import { MainNavItem, SidebarNavItem } from "@/types/nav"
 
 interface DocsConfig {
   mainNav: MainNavItem[]
@@ -40,51 +40,26 @@ export const docsConfig: DocsConfig = {
   ],
   sidebarNav: [
     {
-      title: "Getting Started",
+      title: "Upcoming Events",
       items: [
         {
-          title: "Introduction",
-          href: "/docs",
+          title: "Conference",
+          href: "/events/Conference-24",
           items: [],
         },
         {
-          title: "Installation",
-          href: "/docs/installation",
+          title: "Career Alumni Meet",
+          href: "/events/Career-Alumni-24",
           items: [],
         },
         {
-          title: "components.json",
-          href: "/docs/components-json",
+          title: "Quantum Computing Workshop",
+          href: "/events/Quantum-Computing-24",
           items: [],
         },
         {
-          title: "Theming",
-          href: "/docs/theming",
-          items: [],
-        },
-        {
-          title: "Dark mode",
-          href: "/docs/dark-mode",
-          items: [],
-        },
-        {
-          title: "CLI",
-          href: "/docs/cli",
-          items: [],
-        },
-        {
-          title: "Typography",
-          href: "/docs/components/typography",
-          items: [],
-        },
-        {
-          title: "Figma",
-          href: "/docs/figma",
-          items: [],
-        },
-        {
-          title: "Changelog",
-          href: "/docs/changelog",
+          title: "Python Workshop",
+          href: "/events/Python-24",
           items: [],
         },
       ],
@@ -123,6 +98,12 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
+          title: "Breadcrumb",
+          href: "/docs/components/breadcrumb",
+          items: [],
+          label: "New",
+        },
+        {
           title: "Button",
           href: "/docs/components/button",
           items: [],
@@ -141,7 +122,6 @@ export const docsConfig: DocsConfig = {
           title: "Carousel",
           href: "/docs/components/carousel",
           items: [],
-          label: "New",
         },
         {
           title: "Checkbox",
@@ -187,7 +167,6 @@ export const docsConfig: DocsConfig = {
           title: "Drawer",
           href: "/docs/components/drawer",
           items: [],
-          label: "New",
         },
         {
           title: "Dropdown Menu",
@@ -210,6 +189,12 @@ export const docsConfig: DocsConfig = {
           items: [],
         },
         {
+          title: "Input OTP",
+          href: "/docs/components/input-otp",
+          items: [],
+          label: "New",
+        },
+        {
           title: "Label",
           href: "/docs/components/label",
           items: [],
@@ -228,7 +213,6 @@ export const docsConfig: DocsConfig = {
           title: "Pagination",
           href: "/docs/components/pagination",
           items: [],
-          label: "New",
         },
         {
           title: "Popover",
@@ -249,7 +233,6 @@ export const docsConfig: DocsConfig = {
           title: "Resizable",
           href: "/docs/components/resizable",
           items: [],
-          label: "New",
         },
         {
           title: "Scroll Area",
@@ -285,7 +268,6 @@ export const docsConfig: DocsConfig = {
           title: "Sonner",
           href: "/docs/components/sonner",
           items: [],
-          label: "New",
         },
         {
           title: "Switch",

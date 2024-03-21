@@ -6,10 +6,10 @@ export interface Album {
   
   export const listenNowAlbums: Album[] = [
     {
-      name: "React Rendezvous",
-      artist: "Ethan Byte",
+      name: "Quantum Computing",
+      artist: "Dr Gokul KC",
       cover:
-        "https://images.unsplash.com/photo-1468817814611-b7edf94b5d60?w=300&dpr=2&q=80",
+        "/Article/Quantum/quantum-computer.jpg",
     },
     {
       name: "Async Awakenings",

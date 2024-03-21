@@ -29,10 +29,13 @@ export function MainNav() {
   return (
     <div className="mr-4 hidden md:flex">
       <div className="w-20 flex items-center space-x-4 h-10"></div>
-      <div className="absolute">
-        <a href="/" target="_blank" rel="noreferrer">
-          <Icons.logo className="hidden md:flex md:object-cover absolute" />
-        </a>
+      <div className="absolute top-2">
+        <a
+          href="/"
+          rel="noreferrer"
+          className="absolute hidden md:flex h-20 w-20"
+        />
+        <Icons.logo className="absolute hidden md:flex md:object-cover md:absolute" />
       </div>
       <nav className="flex items-center text-sm">
         <NavigationMenu>

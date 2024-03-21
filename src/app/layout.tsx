@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Sidebar } from "../components/ui/sidebar";
-import { playlists } from "@/data/playlists";
-import Header from "@/components/header";
 import { SiteHeader } from "@/components/nav/site-header";
 import { ThemeProvider } from "@/components/theme-provider";
 import Footer from "@/components/footer";

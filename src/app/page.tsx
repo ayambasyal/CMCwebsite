@@ -1,9 +1,10 @@
+import ScrollCarousel from "@/components/scrollcarousel";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <div className="p-12 max-w-7xl ">
-      <div className={"mx-auto h-screen"}>
+      <div className={"mx-auto h-96"}>
         <section className="py-24 flex flex-col gap-8 items-center text-center">
           <h1 className="text-4xl font-bold">Welcome to KUCMC</h1>
           <p className="text-2xl text-muted-foreground">
@@ -16,6 +17,9 @@ export default function Home() {
           <Button>learn more</Button>
           <Button>enroll now</Button>
         </div>
+      </div>
+      <div>
+        <ScrollCarousel />
       </div>
     </div>
   );
